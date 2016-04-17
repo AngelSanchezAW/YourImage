@@ -1,0 +1,242 @@
+* {
+	font-family: 'Cabin',sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #ecf0f1;
+}
+header {
+	background: #33363b;
+	height: 80px;
+	width: 100%;
+}
+footer {
+	background: black;
+	margin-top: 10px;
+}
+a {
+	text-decoration: none;
+}
+form input#rango {
+	width: 98%;
+}
+form {
+	max-height: 407px;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 8px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+ 
+input[type="radio"]:checked{
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0 0 10px rgba(0,0,0,0.1);
+}
+input[type=number] {
+    height: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 0px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor:pointer;
+    display:block;
+    width:8px;
+    color: #333;
+    text-align:center;
+    position:relative;
+}    
+input[type=number]:hover::-webkit-inner-spin-button { 
+    background: #eee url('http://i.stack.imgur.com/YYySO.png') no-repeat 50% 50%;  
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    position: relative;
+    right: 4px;
+    border-radius: 28px;
+}
+#headerBo {
+	background: #26272b;
+	height: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#contenedor {
+	margin: auto;
+	width: 1200px;
+}
+#opciones {
+	background: #383838;
+	display: inline;
+	float: left;
+	height: 385px;
+	margin: center;
+	width: 600px;
+}
+#imagen {
+	background: #2c3e50;
+	display: inline;
+	float: right;
+	height: 407px;
+	width: 600px;
+}
+.flex-container {
+	background: white;
+	color: white;
+	display: flex;
+}
+.flex-container-header {
+	color: white;
+	display: flex;
+}
+.flex-item-header {
+	margin: 10px;
+	padding-top: 10px;
+	width: 180px;
+}
+.flex-container-header img {
+	width: 200px;
+}
+.flex-item {
+	background-color: #3498db;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 180px;
+}
+#u1,#u2,#u3,#u4,#u5,#u6,#u7,#u8,#u9,#u10,#u11,#u12 {
+	background: #2980b9;
+	height: 5px;
+	margin-left: -10px;
+	margin-top: 10px;
+	position: absolute;
+	width: 180px;
+}
+.flex-item2 {
+	background-color: #3498db;
+	height: 59px;
+	margin: 10px;
+	padding: 10px;
+	width: 260px;
+}
+.flex-item3 {
+	background-color: #3498db;
+	height: 20px;
+	margin: 10px;
+	padding: 10px;
+	width: 260px;
+}
+.flex-container4 {
+	background: #7f8c8d;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	ms-flex-pack: end;
+	padding-left: 12px;
+	padding-right: 12px;
+	webkit-justify-content: flex-end;
+}
+.flex-item4 {
+	background-color: #3b5998;
+	height: 19px;
+	margin: 10px;
+	padding: 10px;
+	width: 160px;
+}
+.flex-item5 {
+	background-color: #3b8dbd;
+	height: 19px;
+	margin: 10px;
+	padding: 10px;
+	width: 135px;
+}
+.flex-item6 {
+	background-color: #DF013A;
+	height: 19px;
+	margin: 10px;
+	padding: 10px;
+	width: 60px;
+}
+#imgCuerpo {
+	background: #95a5a6;
+	padding: 10px;
+	width: 580px;
+}
+#imgContenedor {
+	height: 282px;
+	padding: 10px;
+	width: 560px;
+}
+#imgContenedor img {
+	max-height: 282px;
+	max-width: 560px;
+}
+#color {
+	background: url(../IMG/rochesterday-280.png);
+	cursor: pointer;
+}
+#gris {
+	background: url(../IMG/rochesterday-bn-280.png);
+	cursor: pointer;
+}
+#facebook,#twitter,#codigoc {
+	color: #fff;
+	font-size: 14px;
+}
+#comentarios {
+	margin-top: 10px;
+	width: width:1200px;
+}
+#coment {
+	padding: 10px;
+}
+.radio-toolbar input[type="radio"] {
+	display: none;
+}
+.radio-toolbar label {
+	display: inline-block;
+	padding: 4px 11px;
+}
+#titulo {
+	background: #1C1C1C;
+	color: white;
+	padding: 10px;
+	position: absolute;
+}
+#exp {
+	background: url(../IMG/exp.png);
+	height: 100px;
+	margin-left: 250px;
+	margin-top: -200px;
+	opacity: 0;
+	position: absolute;
+	width: 100px;
+}
+#imgCuerpo:hover div#exp {
+	opacity: 9;
+}
+.flex-container-footer {
+	background: white;
+	color: white;
+	display: flex;
+	background: #151515;
+}
+.flex-item-footer {
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
