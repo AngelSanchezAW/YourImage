@@ -234,6 +234,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	display: flex;
 	background: #151515;
 }
+
 .flex-item-footer {
 	margin: 10px;
 	padding: 10px;
