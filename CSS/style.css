@@ -11,10 +11,7 @@ header {
 	height: 80px;
 	width: 100%;
 }
-footer {
-	background: black;
-	margin-top: 10px;
-}
+
 a {
 	text-decoration: none;
 }
@@ -22,7 +19,7 @@ form input#rango {
 	width: 98%;
 }
 form {
-	max-height: 407px;
+
 }
 input[type="radio"] {
     -webkit-appearance: none;
@@ -76,27 +73,28 @@ input[type=number]:hover::-webkit-inner-spin-button {
 }
 #contenedor {
 	margin: auto;
-	width: 1200px;
+	width: 90%;
 }
 #opciones {
 	background: #383838;
+	margin: center;
+	width: 49%;
+	min-height: 406px;
 	display: inline;
 	float: left;
-	height: 385px;
-	margin: center;
-	width: 600px;
 }
 #imagen {
 	background: #2c3e50;
+	width: 49%;
+	min-height: 406px;
 	display: inline;
 	float: right;
-	height: 407px;
-	width: 600px;
 }
 .flex-container {
 	background: white;
 	color: white;
 	display: flex;
+	justify-content: space-around;
 }
 .flex-container-header {
 	color: white;
@@ -105,7 +103,6 @@ input[type=number]:hover::-webkit-inner-spin-button {
 .flex-item-header {
 	margin: 10px;
 	padding-top: 10px;
-	width: 180px;
 }
 .flex-container-header img {
 	width: 200px;
@@ -115,29 +112,22 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	margin: 10px;
 	padding: 10px;
 	text-align: center;
-	width: 180px;
+	width: 100%;
 }
-#u1,#u2,#u3,#u4,#u5,#u6,#u7,#u8,#u9,#u10,#u11,#u12 {
-	background: #2980b9;
-	height: 5px;
-	margin-left: -10px;
-	margin-top: 10px;
-	position: absolute;
-	width: 180px;
-}
+
 .flex-item2 {
-	background-color: #3498db;
+	/*background-color: #3498db;*/
 	height: 59px;
 	margin: 10px;
 	padding: 10px;
-	width: 260px;
+	width: 100%;
 }
 .flex-item3 {
 	background-color: #3498db;
 	height: 20px;
 	margin: 10px;
 	padding: 10px;
-	width: 260px;
+	width: 100%;
 }
 .flex-container4 {
 	background: #7f8c8d;
@@ -173,23 +163,22 @@ input[type=number]:hover::-webkit-inner-spin-button {
 #imgCuerpo {
 	background: #95a5a6;
 	padding: 10px;
-	width: 580px;
+	min-height: 300px;
 }
 #imgContenedor {
-	height: 282px;
+	
 	padding: 10px;
-	width: 560px;
 }
 #imgContenedor img {
-	max-height: 282px;
-	max-width: 560px;
+	width: 100%;
+	max-height:300px;
 }
 #color {
-	background: url(../IMG/rochesterday-280.png);
+	/* background: url(../IMG/rochesterday-280.png); */
 	cursor: pointer;
 }
 #gris {
-	background: url(../IMG/rochesterday-bn-280.png);
+	/* background: url(../IMG/rochesterday-bn-280.png); */
 	cursor: pointer;
 }
 #facebook,#twitter,#codigoc {
@@ -198,7 +187,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 }
 #comentarios {
 	margin-top: 10px;
-	width: width:1200px;
+	width: width:90%;
 }
 #coment {
 	padding: 10px;
@@ -216,28 +205,44 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	padding: 10px;
 	position: absolute;
 }
-#exp {
-	background: url(../IMG/exp.png);
-	height: 100px;
-	margin-left: 250px;
-	margin-top: -200px;
-	opacity: 0;
-	position: absolute;
-	width: 100px;
-}
-#imgCuerpo:hover div#exp {
-	opacity: 9;
-}
-.flex-container-footer {
-	background: white;
-	color: white;
-	display: flex;
-	background: #151515;
+
+label{
+	width: 100%;
+    height: 80px;
+    margin-bottom: 12px;
 }
 
-.flex-item-footer {
-	margin: 10px;
-	padding: 10px;
-	text-align: center;
-	width: 100%;
+#lColor{
+	background: url(../IMG/rochesterday-280.png);
+	margin-right: 5px;
+	 margin-left: 10px;
 }
+
+#lGris{
+	background: url(../IMG/rochesterday-bn-280.png);
+    margin-left: 5px;
+    	margin-right: 10px;
+}
+
+label #cb,#cb2{
+	display: none;
+
+}
+
+/*VERSION MOVIL*/
+@media only screen  and (max-width: 800px) {    
+    #contenedor {
+		width: 98%;
+    }
+	#opciones {
+		width: 100%;
+		display: block;
+		float: none;
+    }
+    #imagen {
+		width: 100%;
+		display: block;
+		float: none;
+    }
+}
+/*VERSION MOVIL*/
