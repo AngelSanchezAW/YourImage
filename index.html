@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <meta name="author" content="Angel Sanchez">
 	<meta name="description" content="YourImage es una aplicación que utiliza la API de lorempixel para traer imágenes para fines de diseño, cada imagen que utilizamos para este proyecto se distribuye bajo la licencia Creative Commons (CC BY-SA)."/>
 	<meta property="og:locale" content="es_ES" />
@@ -37,57 +38,57 @@
 			    <aside class="flex-container">
                     <div class="flex-item">
                         <input type="radio" name="tipoImg" value="0" checked>
-                        <span class="icon-quill"></span> Abstracto<div id="u1"></div>
+                        <span class="icon-quill"></span> Abstracto
                     </div>
 			    	<div  class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="1">
-			    	    <span class="icon-bug"></span> Animales<div id="u2"></div>
+			    	    <span class="icon-bug"></span> Animales
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="2">
-			    	    <span class="icon-briefcase"></span> Negocios</label><div id="u3"></div>
+			    	    <span class="icon-briefcase"></span> Negocios</label>
 			    	</div>
 			    </aside>
 			    <aside class="flex-container">
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="3"> 
-			    	    <span class="icon-office"></span> Ciudad<div id="u4"></div>
+			    	    <span class="icon-office"></span> Ciudad
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="4"> 
-			    	    <span class="icon-spoon-knife"></span> Comida<div id="u5"></div>
+			    	    <span class="icon-spoon-knife"></span> Comida
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="5"> 
-			    	    <span class="icon-glass2"></span> Vida Nocturna<div id="u6"></div>
+			    	    <span class="icon-glass2"></span> Vida Nocturna
 			    	</div>
 			    </aside>
 			    <aside class="flex-container">
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="6"> 
-			    	    <span class="icon-star-full"></span> Moda<div id="u7"></div>
+			    	    <span class="icon-star-full"></span> Moda
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="7"> 
-			    	    <span class="icon-man-woman"></span> Personas<div id="u8"></div>
+			    	    <span class="icon-man-woman"></span> Personas
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="8"> 
-			    	    <span class="icon-leaf"></span> Naturaleza<div id="u9"></div>
+			    	    <span class="icon-leaf"></span> Naturaleza
 			    	</div>
 			    </aside>
 			    <aside class="flex-container">
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="9"> 
-			    	    <span class="icon-dribbble"></span> Deportes<div id="u10"></div>
+			    	    <span class="icon-dribbble"></span> Deportes
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="10"> 
-			    	    <span class="icon-cogs"></span> Tecnología<div id="u11"></div>
+			    	    <span class="icon-cogs"></span> Tecnología
 			    	</div>
 			    	<div class="flex-item">
 			    	    <input type="radio" name="tipoImg" value="11"> 
-			    	    <span class="icon-truck"></span> Transporte<div id="u12"></div>
+			    	    <span class="icon-truck"></span> Transporte
 			    	</div>
 			    </aside>
 			    <aside class="flex-container">
@@ -99,8 +100,14 @@
 			    	</div>
 			    </aside>
 			     <aside class="flex-container">
-			    	<div id="color" onclick="generar()" class="flex-item2"></div>
-			    	<div id="gris" onclick="generarg()" class="flex-item2"></div>
+			        <label onclick="generar()"  id="lColor" for="cb">			     
+				    	<div title="Imagen a color" id="color" class="flex-item2"></div>
+				    	<input name="cb" id="cb" type="radio" value="12">			  
+			    	</label>
+			    	<label onclick="generar()" id="lGris" for="cb2">
+				    	<div title="Imagen a escala de grises" id="gris" class="flex-item2"></div>
+				    	<input name="cb" id="cb2" type="radio" value="13">
+			    	</label>
 			    </aside>
 			    </form>
 		    </form>
@@ -108,8 +115,7 @@
 	    <aside id="imagen">
 	        <aside id="imgCuerpo">
 	        <div id="titulo"></div>
-	        <div  id="imgContenedor"><img src="IMG/rochesterday.png"></div>
-	        <div id="exp"></div>
+	        <a name="image"><div  id="imgContenedor"><img src="IMG/rochesterday.png"></div></a>
 	        </aside>
 	        <aside class="flex-container4">
 			    <div class="flex-item4"><a id="afacebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.azulweb.net/yourimage/" title="Compartir en Facebook" target="popup" onclick="window.open('', 'popup', 'width=600,height=400')"  rel="nofollow">
@@ -140,30 +146,7 @@
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 		</div>
 	 </div>
-	 <br>
-	<footer>
-		<aside class="flex-container-footer">
-			<div class="flex-item-footer">
-				<figure>
-				    <a href="http://www.azulweb.net/">
-					    <img width="200PX;" align="left" src="IMG/Logo.png" alt="Azul Web">
-				    </a>
-			    </figure>
-			</div>
-			<div class="flex-item-footer">
-				<figure>
-				    <a href="http://lorempixel.com/">
-					    <img width="200PX;" align="center" src="IMG/loremlogo.png" alt="Azul Web">
-				    </a>
-			    </figure>
-			</div>
-		    <div class="flex-item-footer">
-		    	<figure>
-					<img width="200PX;" align="right" src="IMG/cc.logo.large.png" alt="Azul Web">
-			    </figure>
-		    </div>
-		</aside>
-	</footer>				
+	 <br>		
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script src="jquery.h5-lightbox.js"></script>
 </div>
