@@ -225,8 +225,6 @@ input[type=number]:hover::-webkit-inner-spin-button {
     margin-left: 10px;
     margin-top: -31px;
     position: absolute;
-    z-index: 1;
-    opacity: 2;
 }
 
 label{
@@ -292,5 +290,9 @@ label #cb,#cb2{
 		width: 23%;
 		height: 20%;
     }
+    .flex-item{
+    	height: 40px;
+    }
 }
 /*VERSION MOVIL*/
+
