@@ -23,7 +23,7 @@
 	<aside class="flex-container-header">
 	    <div class="flex-item-header">
 		    <figure>
-				<a href="http://www.azulweb.net/">
+				<a href="index.html">
 					<img src="http://www.azulweb.net/wp-content/uploads/2014/02/Logo-Blanco.png" alt="Azul Web">
 				</a>
 			</figure>
@@ -36,62 +36,86 @@
 	        <form name="propiedades" action="#">
 	            <form>
 			    <aside class="flex-container">
-                    <div class="flex-item">
-                        <input type="radio" name="tipoImg" value="0" checked>
-                        <span class="icon-quill"></span> Abstracto
-                    </div>
-			    	<div  class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="1">
-			    	    <span class="icon-bug"></span> Animales
-			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="2">
-			    	    <span class="icon-briefcase"></span> Negocios</label>
-			    	</div>
+			        <label id="abstract" class="flex-item" for="tip1">
+	                    <div>
+	                        <input onclick="opSelect()" id="tip1" type="radio" name="tipoImg" value="0" checked>
+	                        <span class="icon-quill"></span> Abstracto
+	                    </div>
+                    </label>
+                    <label id="animals" class="flex-item" for="tip2">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip2" type="radio" name="tipoImg" value="1">
+				    	    <span class="icon-bug"></span> Animales
+				    	</div>
+			    	</label>
+			    	<label id="business" class="flex-item" for="tip3">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip3" type="radio" name="tipoImg" value="2">
+				    	    <span class="icon-briefcase"></span> Negocios</label>
+				    	</div>
+			    	</label>
 			    </aside>
 			    <aside class="flex-container">
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="3"> 
-			    	    <span class="icon-office"></span> Ciudad
-			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="4"> 
-			    	    <span class="icon-spoon-knife"></span> Comida
-			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="5"> 
-			    	    <span class="icon-glass2"></span> Vida Nocturna
-			    	</div>
+			        <label id="city" class="flex-item" for="tip4">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip4" type="radio" name="tipoImg" value="3"> 
+				    	    <span class="icon-office"></span> Ciudad
+				    	</div>
+			    	</label>
+			    	<label id="food" class="flex-item" for="tip5">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip5" type="radio" name="tipoImg" value="4"> 
+				    	    <span class="icon-spoon-knife"></span> Comida
+				    	</div>
+			    	</label>
+			    	<label id="nightlife" class="flex-item" for="tip6">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip6" type="radio" name="tipoImg" value="5"> 
+				    	    <span class="icon-glass2"></span> Vida Nocturna
+				    	</div>
+			    	</label>
 			    </aside>
 			    <aside class="flex-container">
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="6"> 
+			        <label id="fashion" class="flex-item" for="tip7">
+			    	<div>
+			    	    <input onclick="opSelect()" id="tip7" type="radio" name="tipoImg" value="6"> 
 			    	    <span class="icon-star-full"></span> Moda
 			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="7"> 
+			    	</label>
+			    	<label id="people" class="flex-item" for="tip8">
+			    	<div>
+			    	    <input onclick="opSelect()" id="tip8" type="radio" name="tipoImg" value="7"> 
 			    	    <span class="icon-man-woman"></span> Personas
 			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="8"> 
-			    	    <span class="icon-leaf"></span> Naturaleza
-			    	</div>
+			    	</label>
+			    	<label id="nature" class="flex-item" for="tip9">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip9" type="radio" name="tipoImg" value="8"> 
+				    	    <span class="icon-leaf"></span> Naturaleza
+				    	</div>
+			    	</label>
 			    </aside>
 			    <aside class="flex-container">
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="9"> 
-			    	    <span class="icon-dribbble"></span> Deportes
-			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="10"> 
-			    	    <span class="icon-cogs"></span> Tecnología
-			    	</div>
-			    	<div class="flex-item">
-			    	    <input type="radio" name="tipoImg" value="11"> 
-			    	    <span class="icon-truck"></span> Transporte
-			    	</div>
+			        <label id="sports" class="flex-item" for="tip10">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip10" type="radio" name="tipoImg" value="9"> 
+				    	    <span class="icon-dribbble"></span> Deportes
+				    	</div>
+			    	</label>
+			    	<label id="technics" class="flex-item" for="tip11">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip11" type="radio" name="tipoImg" value="10"> 
+				    	    <span class="icon-cogs"></span> Tecnología
+				    	</div>
+			    	</label>
+			    	<label id="transport" class="flex-item" for="tip12">
+				    	<div>
+				    	    <input onclick="opSelect()" id="tip12" type="radio" name="tipoImg" value="11"> 
+				    	    <span class="icon-truck"></span> Transporte
+				    	</div>
+			    	</label>
 			    </aside>
-			    <aside class="flex-container">
+			    <aside id="nightlife" class="flex-container">
 			    	<div class="flex-item3">
 			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" required required placeholder= "580"/ value="560">
 			    	</div>
@@ -99,7 +123,7 @@
 			    	    <input class="mod" id="rango" min="0" max="1920" name="ancho" type="number" required required placeholder= "302" value="282"/>
 			    	</div>
 			    </aside>
-			     <aside class="flex-container">
+			     <aside id="fashion" class="flex-container">
 			        <label onclick="generar()"  id="lColor" for="cb">			     
 				    	<div title="Imagen a color" id="color" class="flex-item2"></div>
 				    	<input name="cb" id="cb" type="radio" value="12">			  
