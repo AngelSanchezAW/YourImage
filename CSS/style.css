@@ -113,6 +113,10 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	padding: 10px;
 	text-align: center;
 	width: 100%;
+	box-shadow:inset 0px -4px 0px 0px #217dbb;
+    -moz-box-shadow:inset 0px -4px 0px 0px #217dbb;
+    -webkit-box-shadow:inset 0px -4px 0px 0px #217dbb;
+    border-radius: 3px;
 }
 
 .flex-item2 {
@@ -128,6 +132,10 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	margin: 10px;
 	padding: 10px;
 	width: 100%;
+	box-shadow:inset 0px -4px 0px 0px #217dbb;
+    -moz-box-shadow:inset 0px -4px 0px 0px #217dbb;
+    -webkit-box-shadow:inset 0px -4px 0px 0px #217dbb;
+    border-radius: 3px;
 }
 .flex-container4 {
 	background: #7f8c8d;
@@ -221,7 +229,7 @@ label{
 #lGris{
 	background: url(../IMG/rochesterday-bn-280.png);
     margin-left: 5px;
-    	margin-right: 10px;
+    margin-right: 10px;
 }
 
 label #cb,#cb2{
@@ -232,7 +240,7 @@ label #cb,#cb2{
 /*VERSION MOVIL*/
 @media only screen  and (max-width: 800px) {    
     #contenedor {
-		width: 98%;
+		width: 100%;
     }
 	#opciones {
 		width: 100%;
@@ -244,5 +252,9 @@ label #cb,#cb2{
 		display: block;
 		float: none;
     }
+
+    #titulo {
+	max-width: 300px;
+}
 }
 /*VERSION MOVIL*/
