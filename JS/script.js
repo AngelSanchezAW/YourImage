@@ -1,3 +1,14 @@
+function opSelect(){
+    var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport"); 
+	tipo = document.propiedades.tipoImg.value
+	var focus = tipos[tipo];
+	for (var i = 0; i < 12; i++) {
+		var retro = tipos[i];
+		document.getElementById(retro).style.background='#3498db';
+	}	
+	document.getElementById(focus).style.background='#16527a'; 
+}
+
 function generar(){
     var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport"); 
 	tipo = document.propiedades.tipoImg.value
