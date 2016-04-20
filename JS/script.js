@@ -23,7 +23,13 @@ function generar(){
     	var urlimg = "http://lorempixel.com/g/"+alto+"/"+ancho+"/"+tipoImage+"/";
     	imgColor = "Imagen a escala de grises";
     }	
-	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Ver imagen" src="'+urlimg+'" data-large-src="'+urlimg+'">';
-	$("img").h5lightbox();
-	document.getElementById("titulo").innerHTML='Tamaño de imagen: '+alto+' x '+ancho+' | '+imgColor+'';
+
+    if (alto > 1920 | ancho > 1920) {
+    	document.getElementById("titulo").innerHTML='Error: tamaño maximo 1920 x 1920';
+    } else {
+    	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Ver imagen" src="'+urlimg+'" data-large-src="'+urlimg+'">';
+	    $("img").h5lightbox();
+	    document.getElementById("titulo").innerHTML='Tamaño de imagen: '+alto+' x '+ancho+' | '+imgColor+'';
+    }
+
 }
