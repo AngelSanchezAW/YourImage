@@ -18,9 +18,31 @@ a {
 form input#rango {
 	width: 98%;
 }
-form {
 
+h1{
+	color: white;
+    font-size: 40px;
 }
+
+header p{
+	    color: white;
+    margin-top: -10px;
+    margin-left: 7px;
+}
+
+figure{
+	margin-top: -10px;
+}
+
+h3{
+	color: white;
+	padding: 10px;
+}
+
+#botones h3{
+      text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 input[type="radio"] {
     -webkit-appearance: none;
     border: 1px solid #cacece;
@@ -82,6 +104,9 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	min-height: 393px;
 	display: inline;
 	float: left;
+	box-shadow:0px 0px 4px -1px #000000;
+-moz-box-shadow:0px 0px 4px -1px #000000;
+-webkit-box-shadow:0px 0px 4px -1px #000000;
 }
 #imagen {
 	background: #2c3e50;
@@ -89,6 +114,9 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	min-height: 393px;
 	display: inline;
 	float: right;
+	box-shadow:0px 0px 4px -1px #000000;
+-moz-box-shadow:0px 0px 4px -1px #000000;
+-webkit-box-shadow:0px 0px 4px -1px #000000;
 }
 .flex-container {
 	background: white;
@@ -223,8 +251,18 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	color: white;
 	padding: 5px;
     margin-left: 10px;
+    margin-top: -60px;
+    position: absolute;
+}
+
+#url {
+	background: #292929;
+	color: white;
+	padding: 5px;
+    margin-left: 10px;
     margin-top: -31px;
     position: absolute;
+    font-size: 12px;
 }
 
 label{
@@ -245,6 +283,10 @@ input[type="radio"] {
     border-radius: 3px;
 }
 
+#lColor:hover,#lGris:hover{
+	opacity: .7;
+}
+
 #lColor{
 	background: url(../IMG/rochesterday-280.png);
 	margin-right: 10px;
@@ -262,6 +304,7 @@ label #cb,#cb2{
 
 }
 
+
 /*VERSION MOVIL*/
 @media only screen  and (max-width: 800px) {    
     #contenedor {
@@ -276,9 +319,18 @@ label #cb,#cb2{
 		width: 100%;
 		display: block;
 		float: none;
+		min-height: 200px;
+    }
+    #imgCuerpo{
+    	min-height: 200px;
     }
     #titulo {
 	    max-width: 300px;
+	    font-size: 12px; 
+	    margin-top: -55px;   
+    }
+    #ulr{
+    	font-size: 10px;
     }
     label{
 		width: 28%;
