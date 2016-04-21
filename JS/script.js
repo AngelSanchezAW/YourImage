@@ -100,24 +100,36 @@ function generar(){
 	    	var urlimg = "http://lorempixel.com/g/"+alto+"/"+ancho+"/"+tipoImage+"/";
 	    	imgColor = "Imagen a escala de grises";
 	    }	
-	    if (alto > 1920 | ancho > 1920) {
-	    	document.getElementById("titulo").innerHTML='Error: tamaño maximo 1920 x 1920';
-	    } else {
-	    	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Ver imagen" src="'+urlimg+'" data-large-src="'+urlimg+'">';
-		    $("img").h5lightbox();
-		    document.getElementById("titulo").innerHTML='Tamaño de imagen: '+alto+' x '+ancho+' | '+imgColor+'';
-		    document.getElementById("url").innerHTML=urlimg;
-	    }
     } else if (tipoGenenerador == 13) {
-    	http://placeimg.com/640/480/animals/sepia
-    		if (color==12) {
+    	if (color==12) {
     	    var urlimg = "http://placeimg.com/"+alto+"/"+ancho+"/"+tipoImage+"";
 	    	imgColor = "Imagen a color";
 	    } else {
 	    	var urlimg = "http://placeimg.com/"+alto+"/"+ancho+"/"+tipoImage+"/grayscale";
 	    	imgColor = "Imagen a escala de grises";
 	    }	
-	    if (alto > 1920 | ancho > 1920) {
+    } else if (tipoGenenerador == 14) {
+    	if (color==12) {
+    	    var urlimg = "http://placekitten.com/"+alto+"/"+ancho+"";
+	    	imgColor = "Imagen a color";
+	    } else {
+	    	var urlimg = "http://placekitten.com/g/"+alto+"/"+ancho+"";
+	    	imgColor = "Imagen a escala de grises";
+	    }
+    } else if (tipoGenenerador == 15) {
+    	
+    	if (color==12) {
+    	    var urlimg = "https://placeholdit.imgix.net/~text?txtsize=33&txt="+alto+"%C3%97"+ancho+"&w="+alto+"&h="+ancho+"";
+	    	imgColor = "Imagen a color";
+	    } else {
+	    	var urlimg = "http://placehold.it/"+alto+"/"+ancho+"";
+	    	imgColor = "Imagen a escala de grises";
+	    }
+    } else {
+    	alert("Vamo a calmarno 16");
+    } 
+
+    if (alto > 1920 | ancho > 1920) {
 	    	document.getElementById("titulo").innerHTML='Error: tamaño maximo 1920 x 1920';
 	    } else {
 	    	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Ver imagen" src="'+urlimg+'" data-large-src="'+urlimg+'">';
@@ -125,13 +137,6 @@ function generar(){
 		    document.getElementById("titulo").innerHTML='Tamaño de imagen: '+alto+' x '+ancho+' | '+imgColor+'';
 		    document.getElementById("url").innerHTML=urlimg;
 	    }
-    } else if (tipoGenenerador == 14) {
-    	alert("Vamo a calmarno 14");
-    } else if (tipoGenenerador == 15) {
-    	alert("Vamo a calmarno 15");
-    } else {
-    	alert("Vamo a calmarno 16");
-    } 
 }
 // Funciones para traer imagenes de las API'S -----------------------------------------------
 
