@@ -30,10 +30,35 @@
 	    </div>
 	</aside>
 	</header>
-	<div>
 	<div id="headerBo"></div>
+	     <form name="propiedades" action="#">
+	<div id="genImagenes"><span onclick="cerrar()"  class="icon-cancel-circle"></span><h3>Actualmente estas trabajando con el generador de imágenes de Lorem Pixel ¿Deseas cambiar?</h3>
+        <aside class="flex-containergenimage">
+			<label id="lorem" class="flex-itemgenimage" for="tip13">
+	            <input onclick="selGen()" id="tip13" type="radio" name="tipoGen" value="12" checked>
+	             Lorem Pixel
+            </label>
+            <label id="place" class="flex-itemgenimage" for="tip14">
+				<input onclick="selGen()" id="tip14" type="radio" name="tipoGen" value="13">
+				Place IMG 
+			</label>
+			<label id="placek" class="flex-itemgenimage" for="tip15">
+				<input onclick="selGen()" id="tip15" type="radio" name="tipoGen" value="14">
+				Placekitten
+			</label>
+			<label id="plasech" class="flex-itemgenimage" for="tip16">
+				<input onclick="selGen()" id="tip16" type="radio" name="tipoGen" value="15">
+				Placehold.it
+			</label>
+			<label id="ipsum" class="flex-itemgenimage" for="tip17">
+				<input onclick="selGen()" id="tip17" type="radio" name="tipoGen" value="16">
+				Ipsum Image
+			</label>
+	    </aside>
+	</div>
+    <br>
 	    <aside id="opciones">
-	        <form name="propiedades" action="#">
+	        <span id="openGen" onclick="cerrar()"  class="icon-cog"></span>
 	        <h3>Utilice estas opciones para generar la imagen </h3>
 			    <aside class="flex-container">
 			        <label id="abstract" class="flex-item" for="tip1">
@@ -112,6 +137,7 @@
 			    </form>
 		    </form>
 	    </aside>
+	    </form>
 	    <aside id="imagen">
 	    <h3>Vista previa de imagen </h3>
 	        <aside id="imgCuerpo">
@@ -157,5 +183,16 @@
 <script src="jquery.h5-lightbox.js"></script>
 </div>
 <script id="dsq-count-scr" src="//youimg.disqus.com/count.js" async></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 </body>
 </html>
