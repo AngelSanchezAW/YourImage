@@ -43,6 +43,70 @@ h3{
       text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+/* Generador de imagenes */
+
+#genImagenes h3{
+	padding: 10px;
+}
+
+#genImagenes{
+	width: 100%;
+	background: #1e1e1e;
+	overflow: hidden;
+	height: 105px;
+	transition: height .4s;
+    box-shadow:0px 3px 8px 0px #a0a0a0;
+    -moz-box-shadow:0px 3px 8px 0px #a0a0a0;
+    -webkit-box-shadow:0px 3px 8px 0px #a0a0a0;
+}
+
+#genImagenes span{
+	color: white;
+	float: right;
+	padding: 8px;
+	font-size: 25px;
+	transition: color .4s;
+	cursor: pointer;
+
+}
+
+#genImagenes span:hover{
+    color: #de5233;
+}
+
+#openGen{
+	color: white;
+	float: right;
+	padding: 10px;
+	font-size: 20px;
+	transition: color .4s;
+	cursor: pointer;
+
+}
+
+#openGen:hover{
+    color: #de5233;
+}
+
+.flex-itemgenimage {
+	background-color: #de5233;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	box-shadow:inset 0px -4px 0px 0px #bf3c1f;
+    -moz-box-shadow:inset 0px -4px 0px 0px #bf3c1f;
+    -webkit-box-shadow:inset 0px -4px 0px 0px #bf3c1f;
+    border-radius: 3px;
+}
+
+.flex-containergenimage {
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Generador de imagenes */
 input[type="radio"] {
     -webkit-appearance: none;
     border: 1px solid #cacece;
@@ -95,7 +159,8 @@ input[type=number]:hover::-webkit-inner-spin-button {
 }
 #contenedor {
 	margin: auto;
-	width: 90%;
+	width: 100%;
+	max-width: 1200px;
 }
 #opciones {
 	background: #383838;
@@ -136,7 +201,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	width: 200px;
 }
 .flex-item {
-	background-color: #3498db;
+	background: #3498db;
 	margin: 10px;
 	padding: 10px;
 	text-align: center;
@@ -145,6 +210,12 @@ input[type=number]:hover::-webkit-inner-spin-button {
     -moz-box-shadow:inset 0px -4px 0px 0px #217dbb;
     -webkit-box-shadow:inset 0px -4px 0px 0px #217dbb;
     border-radius: 3px;
+    transition: background .4s;
+}
+
+.flex-item:hover {
+	background: #16527a;
+	
 }
 
 .flex-item2 {
@@ -227,6 +298,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 #gris {
 	/* background: url(../IMG/rochesterday-bn-280.png); */
 	cursor: pointer;
+	width: 80%;
 }
 #facebook,#twitter,#codigoc {
 	color: #fff;
