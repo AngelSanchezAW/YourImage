@@ -16,7 +16,14 @@ a {
 	text-decoration: none;
 }
 form input#rango {
-	width: 98%;
+	width: 99%;
+	border-radius: 2px;
+	border: none;
+	height: 25px;
+	margin-top: -15px;
+	font-size: 18px;
+	color: #1C1C1C;
+	padding-left: 5px;
 }
 
 h1{
@@ -47,6 +54,16 @@ h3{
 
 #genImagenes h3{
 	padding: 10px;
+	display: inline-block;
+}
+
+#genImagenes p{
+	display: inline-block;
+	background: #848484;
+	padding-left: 2px;
+	padding-right: 4px;
+	margin-top: -1px;
+	margin-bottom: -1px;
 }
 
 #genImagenes{
@@ -104,6 +121,10 @@ h3{
 	color: white;
 	display: flex;
 	justify-content: space-around;
+}
+
+#lorem{
+	background: #a9351b;
 }
 
 /* Generador de imagenes */
@@ -282,6 +303,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	background: #95a5a6;
 	padding: 10px;
 	min-height: 320px;
+	overflow: hidden;
 }
 #imgContenedor {
 	
@@ -335,6 +357,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
     margin-top: -31px;
     position: absolute;
     font-size: 12px;
+    max-width: 400px;
 }
 
 label{
@@ -374,6 +397,19 @@ input[type="radio"] {
 label #cb,#cb2{
 	display: none;
 
+}
+
+#opT1,#opT2,#opT3,#opT4{
+	display: none;
+}
+
+#opT3,#opT4{
+	background: none;
+	color: black;
+	margin-right: -11px;
+	box-shadow:inset 0px 0px 0px 0px #217dbb;
+    -moz-box-shadow:inset 0px 0px 0px 0px #217dbb;
+    -webkit-box-shadow:inset 0px 0px 0px 0px #217dbb;
 }
 
 
