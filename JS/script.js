@@ -9,10 +9,12 @@ function opSelect(){
 	}	
 	document.getElementById(focus).style.background='#16527a'; 
 }
+
 function selGen(){
-    var Generadores = new Array("lorem","place","placek","plasech","ipsum"); 
+    var Generadores = new Array("lorem","place","placek","plasech"); 
 	tipoGenenerador = document.propiedades.tipoGen.value
 	Generador = tipoGenenerador -12;
+
 
     if (Generador==0) {
     	document.getElementById("animals").style.display = 'block';
@@ -27,6 +29,11 @@ function selGen(){
 		document.getElementById("fashion").style.display = 'block';
 		document.getElementById("sports").style.display = 'block';
 		document.getElementById("transport").style.display = 'block';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
+		document.getElementById("opT4").style.display = 'none';
+		document.getElementById("pTex").innerHTML='Lorem Pixel'; 
     } else if (Generador==1) {
         document.getElementById("animals").style.display = 'block';
     	document.getElementById("city").style.display = 'block';
@@ -40,6 +47,11 @@ function selGen(){
 		document.getElementById("fashion").style.display = 'none'; 
 		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
+		document.getElementById("opT4").style.display = 'none';
+		document.getElementById("pTex").innerHTML='Place IMG';  
     } else if (Generador==2) {
         document.getElementById("animals").style.display = 'none';
     	document.getElementById("city").style.display = 'none';
@@ -53,6 +65,11 @@ function selGen(){
 		document.getElementById("fashion").style.display = 'none'; 
 		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
+		document.getElementById("opT4").style.display = 'none';
+		document.getElementById("pTex").innerHTML='Placekitten';   
     } else if (Generador==3) {
     	document.getElementById("animals").style.display = 'none';
     	document.getElementById("city").style.display = 'none';
@@ -66,13 +83,16 @@ function selGen(){
 		document.getElementById("fashion").style.display = 'none'; 
 		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
+		document.getElementById("opT1").style.display = 'block'; 
+		document.getElementById("opT2").style.display = 'block';  
+		document.getElementById("opT3").style.display = 'block';  
+		document.getElementById("opT4").style.display = 'block';
+		document.getElementById("pTex").innerHTML='Placehold.it';    
 
-    } else if (Generador==4) {
-
-    }
+    } 
 
 	var focusGen = Generadores[Generador];
-	for (var i = 0; i < 5; i++) {
+	for (var i = 0; i < 4; i++) {
 		var retroGen = Generadores[i];
 		document.getElementById(retroGen).style.background='#de5233';
 	}	
@@ -88,8 +108,14 @@ function generar(){
 	tipo = document.propiedades.tipoImg.value
 	alto = document.propiedades.alto.value
 	ancho = document.propiedades.ancho.value
-	color = document.propiedades.cb.value   
+	color = document.propiedades.cb.value
+    vtext = document.propiedades.tIamge.value
+	vsizeText = document.propiedades.sText.value
+	vcolorText = document.propiedades.cText.value
+	vbackgroundImage = document.propiedades.bImage.value
 	var tipoImage = tipos[tipo];
+	var new_vcolorText=vcolorText.substr(1);
+	var new_vbackgroundImage=vbackgroundImage.substr(1);
     
 
     if (tipoGenenerador == 12) {
@@ -119,7 +145,7 @@ function generar(){
     } else if (tipoGenenerador == 15) {
     	
     	if (color==12) {
-    	    var urlimg = "https://placeholdit.imgix.net/~text?txtsize=33&txt="+alto+"%C3%97"+ancho+"&w="+alto+"&h="+ancho+"";
+    	    var urlimg = "https://placeholdit.imgix.net/~text?txtsize="+vsizeText+"&bg="+new_vcolorText+"&txtclr="+new_vbackgroundImage+"&txt="+vtext+"&w="+alto+"&h="+ancho+"";
 	    	imgColor = "Imagen a color";
 	    } else {
 	    	var urlimg = "http://placehold.it/"+alto+"/"+ancho+"";
