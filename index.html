@@ -32,7 +32,7 @@
 	</header>
 	<div id="headerBo"></div>
 	     <form name="propiedades" action="#">
-	<div id="genImagenes"><span onclick="cerrar()"  class="icon-cancel-circle"></span><h3>Actualmente estas trabajando con el generador de imágenes de Lorem Pixel ¿Deseas cambiar?</h3>
+	<div id="genImagenes"><span onclick="cerrar()"  class="icon-cancel-circle"></span><h3>Actualmente estas trabajando con el generador de imágenes de <p id="pTex">Lorem Pixel</p></h3>
         <aside class="flex-containergenimage">
 			<label id="lorem" class="flex-itemgenimage" for="tip13">
 	            <input onclick="selGen()" id="tip13" type="radio" name="tipoGen" value="12" checked>
@@ -49,10 +49,6 @@
 			<label id="plasech" class="flex-itemgenimage" for="tip16">
 				<input onclick="selGen()" id="tip16" type="radio" name="tipoGen" value="15">
 				Placehold.it
-			</label>
-			<label id="ipsum" class="flex-itemgenimage" for="tip17">
-				<input onclick="selGen()" id="tip17" type="radio" name="tipoGen" value="16">
-				Ipsum Image
 			</label>
 	    </aside>
 	</div>
@@ -122,31 +118,29 @@
 
 
 			    <aside class="flex-container">
-			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="text" required required placeholder= " Colocar el texto a mostrar en la imagen"/ >
+			    	<div id="opT1" class="flex-item3">
+			    	    <input class="mod" id="rango"  min="0" max="1920" name="tIamge" type="text" required required placeholder= " Colocar el texto a mostrar en la imagen"/ >
+			    	</div>
+			    </aside>
+			    <aside class="flex-container">
+			        <div id="opT2" class="flex-item3">
+			    	    <input class="mod" id="rango" min="0" max="1920" name="sText" type="number" required required placeholder= " Tamaño del texto"/ >
+			    	</div>
+			    	<div id="opT3" class="flex-item3">
+			    	    <label  for="backgroundColor"> Clor de fondo :</label>
+			    	    <input id="background-color" type="color" name="cText" value="#e7e7e7" />
+			    	</div>
+			    	<div id="opT4" class="flex-item3">
+			    	    <label  for="background-color"> Color del texto :</label>
+			    	    <input id="background-color" type="color" name="bImage" />
 			    	</div>
 			    </aside>
 			    <aside class="flex-container">
 			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" required required placeholder= " Colocar el tamaño del texto"/ >
-			    	</div>
-			    </aside>
-			    <aside class="flex-container">
-			    	<div class="flex-item3">
-			    	    <label for="background-color">Color del texto :</label>
-			    	    <input id="background-color" type="color" />
+			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" required required placeholder= " Colocar ancho de imagen"/ >
 			    	</div>
 			    	<div class="flex-item3">
-			    	     <label for="background-color">Color de fondo :</label>
-			    	    <input id="background-color" type="color" />
-			    	</div>
-			    </aside>
-			    <aside class="flex-container">
-			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" required required placeholder= "Colocar ancho de imagen"/ >
-			    	</div>
-			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="ancho" type="number" required required placeholder= "Colocar alto de imagen" />
+			    	    <input class="mod" id="rango" min="0" max="1920" name="ancho" type="number" required required placeholder= " Colocar alto de imagen" />
 			    	</div>
 			    </aside>
 
