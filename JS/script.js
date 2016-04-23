@@ -170,11 +170,21 @@ function generar(){
 var clic = 1;
 function cerrar(){
 	if(clic==1){
-	   document.getElementById("genImagenes").style.height = '0px';
+	   document.getElementById("genImagenes").style.height = 'auto';
 	   clic = clic + 1;
 	   } else{
-	       document.getElementById("genImagenes").style.height = '105px';;      
+	       document.getElementById("genImagenes").style.height = '40px';;      
 	    clic = 1;
+	}   
+}
+var clic2 = 1;
+function cerrar2(){
+	if(clic2==1){
+	   document.getElementById("opciones").style.height = 'auto';
+	   clic2 = clic2 + 1;
+	   } else{
+	       document.getElementById("opciones").style.height = '40px';;      
+	    clic2 = 1;
 	}   
 }
 // Funciones para Ocultar Menú --------------------------------------------------------------

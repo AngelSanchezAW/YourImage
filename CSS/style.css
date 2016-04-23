@@ -32,8 +32,8 @@ h1{
 }
 
 header p{
-	    color: white;
-    margin-top: -10px;
+	color: white;
+    margin-top: -5px;
     margin-left: 7px;
 }
 
@@ -68,9 +68,9 @@ h3{
 
 #genImagenes{
 	width: 100%;
-	background: #1e1e1e;
+	background: #383838;
 	overflow: hidden;
-	height: 105px;
+	height: 40px;
 	transition: height .4s;
     box-shadow:0px 3px 8px 0px #a0a0a0;
     -moz-box-shadow:0px 3px 8px 0px #a0a0a0;
@@ -84,11 +84,12 @@ h3{
 	font-size: 25px;
 	transition: color .4s;
 	cursor: pointer;
-
+	transition: all .1s ease-in-out;
 }
 
 #genImagenes span:hover{
-    color: #de5233;
+	transform: scale(1.1);
+	color: #E6E6E6;
 }
 
 #openGen{
@@ -115,6 +116,11 @@ h3{
     -moz-box-shadow:inset 0px -4px 0px 0px #bf3c1f;
     -webkit-box-shadow:inset 0px -4px 0px 0px #bf3c1f;
     border-radius: 3px;
+    transition: background .4s;
+}
+
+.flex-itemgenimage:hover{
+	background: #a9351b;
 }
 
 .flex-containergenimage {
@@ -122,6 +128,7 @@ h3{
 	display: flex;
 	justify-content: space-around;
 }
+
 
 #lorem{
 	background: #a9351b;
@@ -187,13 +194,17 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	background: #383838;
 	margin: center;
 	width: 49%;
-	min-height: 393px;
 	display: inline;
 	float: left;
 	box-shadow:0px 0px 4px -1px #000000;
 -moz-box-shadow:0px 0px 4px -1px #000000;
 -webkit-box-shadow:0px 0px 4px -1px #000000;
 }
+
+#opciones #cerrar2 {
+display: none;
+}
+
 #imagen {
 	background: #2c3e50;
 	width: 49%;
@@ -215,11 +226,12 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	display: flex;
 }
 .flex-item-header {
-	margin: 10px;
-	padding-top: 10px;
+	margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
 }
 .flex-container-header img {
-	width: 200px;
+	margin-top: 10px;
 }
 .flex-item {
 	background: #3498db;
@@ -406,7 +418,7 @@ label #cb,#cb2{
 #opT3,#opT4{
 	background: none;
 	color: black;
-	margin-right: -11px;
+	
 	box-shadow:inset 0px 0px 0px 0px #217dbb;
     -moz-box-shadow:inset 0px 0px 0px 0px #217dbb;
     -webkit-box-shadow:inset 0px 0px 0px 0px #217dbb;
@@ -453,6 +465,57 @@ label #cb,#cb2{
     .flex-item{
     	height: 40px;
     }
+
+    #opciones {
+    	height: 40px;
+        overflow: hidden;
+    }
+
+    #opciones h3{
+        font-size: 15px;
+        padding-bottom: 12px;
+        margin-bottom: 5px;
+    }
+
+    #genImagenes{
+    	height: 40px;
+    	margin-bottom: -15px;
+    	margin-top: -8px;
+    }
+
+    #genImagenes p{
+    	font-size: 20px;
+    	padding-top: 8px;
+    	padding-bottom: 10px;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    }
+
+    #genImagenes h3{
+    	display: none;
+    }
+
+    #opciones #cerrar2{
+    display: block;
+	color: white;
+	float: right;
+	padding: 8px;
+	font-size: 25px;
+	transition: color .4s;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+
+.flex-containergenimage {
+	color: white;
+	display: flex;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+}
+#opT3 label, #opT4 label{
+	display: none;
+}
 }
 /*VERSION MOVIL*/
 

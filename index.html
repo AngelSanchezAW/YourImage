@@ -15,7 +15,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="JS/script.js"></script>
 	<link rel="stylesheet" href="jquery.h5-lightbox.css">
-	<link rel="shortcut icon" href="http://www.azulweb.net/wp-content/uploads/2014/09/favicon.png" />
+	<link rel="shortcut icon" href="IMG/50x50.png" />
 </head>
 <body>
 <div id="contenedor">
@@ -24,7 +24,14 @@
 	    <div class="flex-item-header">
 		    <figure>
 				<a href="index.html">
-					<h1>YourImage</h1><p>By AzulWeb</p>
+					<img src="IMG/50x50.png">
+				</a>
+			</figure>
+	    </div>
+	    <div class="flex-item-header">
+		    <figure>
+				<a href="index.html">
+				<h1>YourImage</h1><p>By AzulWeb</p>
 				</a>
 			</figure>
 	    </div>
@@ -32,7 +39,7 @@
 	</header>
 	<div id="headerBo"></div>
 	     <form name="propiedades" action="#">
-	<div id="genImagenes"><span onclick="cerrar()"  class="icon-cancel-circle"></span><h3>Actualmente estas trabajando con el generador de imágenes de <p id="pTex">Lorem Pixel</p></h3>
+	<div id="genImagenes"><span onclick="cerrar()"  class="icon-menu2"></span><h3>Actualmente estas trabajando con el generador de imágenes de</h3> <p id="pTex">Lorem Pixel</p>
         <aside class="flex-containergenimage">
 			<label id="lorem" class="flex-itemgenimage" for="tip13">
 	            <input onclick="selGen()" id="tip13" type="radio" name="tipoGen" value="12" checked>
@@ -54,8 +61,7 @@
 	</div>
     <br>
 	    <aside id="opciones">
-	        <span id="openGen" onclick="cerrar()"  class="icon-cog"></span>
-	        <h3>Utilice estas opciones para generar la imagen </h3>
+	        <span onclick="cerrar2()" id="cerrar2" class="icon-menu2"></span><h3>Utilice estas opciones para generar la imagen </h3>
 			    <aside class="flex-container">
 			        <label id="abstract" class="flex-item" for="tip1">
 	                    <input onclick="opSelect()" id="tip1" type="radio" name="tipoImg" value="0" checked>
@@ -112,11 +118,6 @@
 				    	<span class="icon-truck"></span> Transporte
 			    	</label>	
 			    </aside>
-
-
-
-
-
 			    <aside class="flex-container">
 			    	<div id="opT1" class="flex-item3">
 			    	    <input class="mod" id="rango"  min="0" max="1920" name="tIamge" type="text" required required placeholder= " Colocar el texto a mostrar en la imagen"/ >
@@ -137,19 +138,12 @@
 			    </aside>
 			    <aside class="flex-container">
 			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" required required placeholder= " Colocar ancho de imagen"/ >
+			    	    <input class="mod" id="rango" min="0" max="1920" name="alto" type="number" placeholder= " Colocar ancho de imagen"/ >
 			    	</div>
 			    	<div class="flex-item3">
-			    	    <input class="mod" id="rango" min="0" max="1920" name="ancho" type="number" required required placeholder= " Colocar alto de imagen" />
+			    	    <input class="mod" id="rango" min="0" max="1920" name="ancho" type="number" required placeholder= " Colocar alto de imagen" />
 			    	</div>
 			    </aside>
-
-
-
-
-
-
-
 			    <aside id="botones" class="flex-container">
 			        <label onclick="generar()"  id="lColor" for="cb">			     
 				    	<div title="Imagen a color" id="color" class="flex-item2"><h3>Color image</h3></div>
@@ -177,7 +171,7 @@
 		                <p id="facebook"><i class="icon-facebook" ></i></p>
 		            </div>
 	            </a>
-	            <a href="http://twitter.com/share?url=http://www.azulweb.net/yourimage//&text=Generador de sombras CSS3 (Box-shadow), vía @AzulWebBlog" title="Compartir en Twitter" target="popup" onclick="window.open('', 'popup', 'width=600,height=400')"  rel="nofollow">
+	            <a href="http://twitter.com/share?url=http://www.azulweb.net/yourimage/&text=YourImage - imágenes para fines de diseño, vía @AzulWebBlog" title="Compartir en Twitter" target="popup" onclick="window.open('', 'popup', 'width=600,height=400')"  rel="nofollow">
 				    <div class="flex-item5">
 		                <p id="twitter"><i class="icon-twitter" ></i></p>
 		            </div>
@@ -209,23 +203,5 @@
 <script src="jquery.h5-lightbox.js"></script>
 </div>
 <script id="dsq-count-scr" src="//youimg.disqus.com/count.js" async></script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<table>
-<td>Hola</td>
-<td>Hola</td>
-<td>Hola</td>
-<td>Hola</td>
-</table>
-
 </body>
 </html>
