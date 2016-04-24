@@ -4,11 +4,11 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <meta name="author" content="Angel Sanchez">
-	<meta name="description" content="YourImage es una aplicación que utiliza la API de lorempixel para traer imágenes para fines de diseño, cada imagen que utilizamos para este proyecto se distribuye bajo la licencia Creative Commons (CC BY-SA)."/>
+	<meta name="description" content="YourImage es una aplicación que reúne a cuatro generadores automáticos de imágenes (Lorem Pixel, Place IMG, Placekitten y Placehold) con el fin de ofrecer recursos para diseñadores web: fotos aleatorias de muestra."/>
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:url" content="http://www.azulweb.net/yourimage/" />
 	<meta property="og:site_name" content="Azul Web" />
-	<meta property="og:image" content="http://www.azulweb.net/wp-content/uploads/2014/02/YourImage-ResponsiveDesign.jpg" />
+	<meta property="og:image" content="http://www.azulweb.net/yourimage/IMG/YourImage-Portada.png" />
 	<title>YourImage</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -30,15 +30,13 @@
 		<aside class="flex-container-header">
 		    <div class="flex-item-header">
 			    <figure>
-					<a href="index.html">
+					<a href="http://www.azulweb.net/yourimage/">
 						<img src="IMG/50x50.png">
-					</a>
 				</figure>
 		    </div>
 		    <div class="flex-item-header">
 			    <figure>
-					<a href="index.html">
-					<h1>YourImage</h1><p>By AzulWeb</p>
+						<h1>YourImage</h1><p>By AzulWeb</p>
 					</a>
 				</figure>
 		    </div>
@@ -62,7 +60,7 @@
 	</header>
 	<div id="headerBo"></div>
 	     <form name="propiedades" action="#">
-	<div id="genImagenes"><span onclick="cerrar()"  class="icon-menu2"></span><h3>Actualmente estas trabajando con el generador de imágenes de</h3> <p id="pTex">Lorem Pixel</p>
+	<div id="genImagenes"><span onclick="cerrar()"  class="icon-menu2"></span><h3>Actualmente estás trabajando con el generador de imágenes de</h3> <p id="pTex">Lorem Pixel</p>
         <aside class="flex-containergenimage">
 			<label id="lorem" class="flex-itemgenimage" for="tip13">
 	            <input onclick="selGen()" id="tip13" type="radio" name="tipoGen" value="12" checked>
@@ -299,9 +297,19 @@
 		<p><strong>Azul Web</strong> © 2016.</p>
 		<p><strong>YourImage</strong> by Angel Sanchez.</p>
 	</footer>	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="jquery.h5-lightbox.js"></script>
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.h5-lightbox.js"></script>
 <script id="dsq-count-scr" src="//youimg.disqus.com/count.js" async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48284612-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
