@@ -19,44 +19,46 @@
 </head>
 <script>
 	window.onload = function() {
-		document.getElementById("headerImages").style.opacity = '0.4';
+		document.getElementById("headerImages").style.opacity = '0.4'; 
+		document.getElementById("tituloPost").style.opacity = '9';
+		document.getElementById("headerImages2").style.opacity = '0.4';
     }
 </script>
 <body>
 <div id="contenedor">
 	<header>
-	<aside class="flex-container-header">
-	    <div class="flex-item-header">
-		    <figure>
-				<a href="index.html">
-					<img src="IMG/50x50.png">
-				</a>
-			</figure>
-	    </div>
-	    <div class="flex-item-header">
-		    <figure>
-				<a href="index.html">
-				<h1>YourImage</h1><p>By AzulWeb</p>
-				</a>
-			</figure>
-	    </div>
-	</aside>
-	<div id="headerImages" class="header__images">
-				<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
-				<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
-			</div>
+		<aside class="flex-container-header">
+		    <div class="flex-item-header">
+			    <figure>
+					<a href="index.html">
+						<img src="IMG/50x50.png">
+					</a>
+				</figure>
+		    </div>
+		    <div class="flex-item-header">
+			    <figure>
+					<a href="index.html">
+					<h1>YourImage</h1><p>By AzulWeb</p>
+					</a>
+				</figure>
+		    </div>
+		</aside>
+		<div id="headerImages" class="header__images">
+			<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+		</div>
 	</header>
 	<div id="headerBo"></div>
 	     <form name="propiedades" action="#">
@@ -82,7 +84,7 @@
 	</div>
     <br>
 	    <aside id="opciones">
-	        <span onclick="cerrar2()" id="cerrar2" class="icon-menu2"></span><h3>Utilice estas opciones para generar la imagen </h3>
+	        <span onclick="cerrar2()" id="cerrar2" class="icon-menu2"></span><h3>Opciones para generar imagen </h3>
 			    <aside class="flex-container">
 			        <label id="abstract" class="flex-item" for="tip1">
 	                    <input onclick="opSelect()" id="tip1" type="radio" name="tipoImg" value="0" checked>
@@ -149,11 +151,11 @@
 			    	    <input class="mod" id="rango" min="0" max="1920" name="sText" type="number" required required placeholder= " Tamaño del texto"/ >
 			    	</div>
 			    	<div id="opT3" class="flex-item3">
-			    	    <label  for="backgroundColor"> Clor de fondo :</label>
+			    	    <label  for="backgroundColor">Fondo :</label>
 			    	    <input id="background-color" type="color" name="cText" value="#e7e7e7" />
 			    	</div>
 			    	<div id="opT4" class="flex-item3">
-			    	    <label  for="background-color"> Color del texto :</label>
+			    	    <label  for="background-color">Texto :</label>
 			    	    <input id="background-color" type="color" name="bImage" />
 			    	</div>
 			    </aside>
@@ -182,7 +184,7 @@
 	    <aside id="imagen">
 	    <h3>Vista previa de imagen </h3>
 	        <aside id="imgCuerpo">
-	        <a name="image"><div  id="imgContenedor"><img src="IMG/rochesterday.png"></div></a>
+	        <a name="image"><div  id="imgContenedor"><img src="http://placeimg.com/800/400/nature"></div></a>
 	        <div id="titulo"></div>
 	        <div id="url"></div>
 	        </aside>
@@ -203,10 +205,84 @@
 	                </div>
                 </a>
 			</aside>
-	    </aside>
-	</div>
+	    </aside>  
 	 <div style="clear: both"></div>
-	 <div id="comentarios">
+	 <div class="header__images2">
+			<img src="http://placekitten.com/200/100" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+			<img src="http://lorempixel.com/200/100/people/" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+			<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+			<img src="http://lorempixel.com/200/100/nature/" class="animated fadeIn">
+			<div id="tituloPost">
+		    <h1><span ><strong>Generadores automáticos de imágenes</strong></span></h1>
+	        <h6><span style="color: #999999; font-size: 15px;">RECURSOS PARA DISEÑADORES WEB: FOTOS ALEATORIAS DE MUESTRA</span></h6>
+		    </div>
+		</div>
+		<div id="comentarios">
+			<h1 style="color: #333333;"><span><strong>Generadores automáticos de imágenes</strong></span></h1>
+			<h6><span style="color: #999999; font-size: 15px;">RECURSOS PARA DISEÑADORES WEB: FOTOS ALEATORIAS DE MUESTRA</span></h6>
+			&nbsp;
+			<div style="float:right; padding: 5px; background: #E6E6E6; margin: 5px;" ><img width="100%" src="http://placeimg.com/380/150/nature"><p style="color: #848484; font-size: 10px;">Imagen generada automaticamente por placeimg</p></div>
+			<p style="text-align: left;"><span style="color: #333333;">De la misma manera que existen generadores de textos de muestra<strong> (a partir del conocido Lorem Ipsum o de otros textos)</strong>, también existen <strong>generadores de fotos aleatorias y de espacios para imágenes (placeholders)</strong>. </span><span style="color: #333333;">Este tipo de servicios son perfectos a la hora de empezar a maquetar una web, evitándonos tener que recurrir a fotos de <strong>stock o imágenes de relleno</strong> que podamos tener preparadas en nuestro cajón de recursos. </span><strong><span style="color: #333333;">Resulta mucho más fácil entrar al generador y buscar una imagen del tamaño exacto para colocarla en tu sitio que descargar una imagen y abrir esta en algún editor de imágenes como PhotoShop y cambiar el tamaño de la misma.</span></strong></p>
+			&nbsp;
+			<h2><span style="color: #333333;"><strong>¿Por qué existe YourImage? </strong></span></h2>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><strong><a href="https://github.com/AngelSanchezAW">YourImage</a></strong> es una aplicación hecha por mi <strong><a href="https://twitter.com/Angeel_Sancheez">(Angel Sanchez)</a></strong> con el fin de poner en práctica los conocimientos que he adquirido sobre desarrollo web, la he colgado en la web de <strong>Azul Web</strong> para que esta no sea desaprovechada y le sea útil a ustedes.</span></p>
+			&nbsp;
+			<h2><span style="color: #333333;"><strong>¿Cómo funciona YourImage?</strong></span></h2>
+			<br>
+			<strong><span style="color: #333333;">La manera en la que funciona YourImage es muy simple…</span></strong>
+			<br><br>
+			<p style="text-align: left;"><span style="color: #333333;"><strong>1.-</strong> En la parte de arriba encontramos un pequeño <strong>menú desplegable</strong> donde se puede cambiar a gusto la <strong>fuente</strong> de las imágenes que se generaran, por defecto esta seleccionada la fuente de <strong>“Lorem Pixel”</strong> pero tenemos la posibilidad de utilizar otras tres fuentes <strong>(Place IMG, Placekitten, Placehold)</strong>.</span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><strong>2.-</strong> Una vez que tengamos seleccionada la fuente del <strong>generador automático de imágenes</strong> podemos escoger entre las diferentes opciones que brinda cada una. En el caso de <strong>Lorem Pixel</strong> nos encontramos con <strong>12 temáticas diferentes, abstracto, animales, negociones, etc.</strong> También podemos escoger el <strong>ancho</strong> de la imagen, <strong>alto</strong> de la imagen y si la deseamos a <strong>color o en escala de grises</strong>. Cada<strong> generador automático de imágenes</strong> nos presenta opciones diferentes.</span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><strong>3.-</strong> Una vez que hayamos escogido la imagen esta se generara en la parte derecha <strong>(en la versión de escritorio)</strong> donde podemos hacer <strong>clic derecho y guardarla</strong>, o si deseamos también nos muestra el <strong>link</strong> que puedes integrar en tu sitio web, solo hay que tomar en cuenta que si utilizas el link <strong>no obtendrás la imagen que está en la vista previa</strong> si no que el generador automático de imágenes te enviara <strong>imágenes random.</strong></span></p>
+			&nbsp;
+			<h2 style="text-align: left;"><span style="color: #333333;">Lorem Pixel y otros generadores automáticos de imágenes para maquetación web</span></h2>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;">Como lo comente anteriormente, <strong>YourImage</strong> funciona con <strong>4 generadores automáticos de imágenes</strong> para maquetación web,<strong> Lorem Pixel, Place IMG, Placekitten y Placehold.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><strong>Lorem Pixel</strong> es un servicio de <strong>generación automática de imágenes</strong> gratuito y muy fácil de utilizar. Solo tenemos que apuntar la URL de la imagen a este servicio, especificando las dimensiones que necesitamos, y nos incrustará una foto automáticamente.</span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;">Podemos seleccionar cualquier tamaño, es decir, no estamos limitados a tamaños estándar. Funcionará igualmente bien tanto si pedimos una foto de <strong>300 x 200 pixels</strong>, como cualquier otra proporción caprichosa que necesitemos, por ejemplo <strong>206 x 191</strong>. Eso sí, el límite, tanto del ancho como del alto, es de <strong>1920 pixels</strong>, el perfil de color siempre será <strong>RGB</strong> o <strong>escala de grises</strong> y la resolución, <strong>72 ppp.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><strong>Lorem Pixum</strong> nos permite seleccionar fotos de entre <strong>12</strong> temas o categorías: <strong>fotos abstractas, de animales, urbanas, negocios, de comida, nocturnas, moda, gente, naturaleza, deportes, técnicas y transportes.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;">Esto nos puede venir muy bien, por ejemplo, si estamos <strong>montando una web para un restaurante</strong> y todavía no nos han enviado las fotos de los platos del menú. Podríamos utilizar las fotos de <strong>Lorem Pixum</strong> especificando que sólo queremos fotos cuadradas de exactamente <strong>500 x 500 pixels</strong> y únicamente de la categoría <strong>“Comida”.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><a href="http://placeimg.com/"><strong>Place IMG</strong></a> sirve fotos automáticamente desde<strong> 500px y Flickr</strong>. Su funcionamiento es muy similar a <strong>Lorem Pixel</strong>: podemos elegir un tema <strong>(animales, arquitectura, naturaleza, tecnología…)</strong> y también un efecto <strong>(fotos en blanco y negro o sepia).</strong> Además, cuenta con plugins disponibles para <strong>ExpressionEngine, Drupal y WordPress, entre otros.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><a href="http://placekitten.com/"><strong>Placekitten</strong></a> es otro generador de fotos parecido a <strong>Lorem Pixum</strong> pero con la particularidad de que únicamente nos entrega fotos sobre un tema: <strong>gatos.</strong></span></p>
+			&nbsp;
+			<p style="text-align: left;"><span style="color: #333333;"><a href="Placehold.it"><strong>Placehold.it</strong></a> es diferente a los dos servicios anteriores. En este caso, se trata de un <strong>generador de espacios para imágenes</strong> (los típicos cuadros grises tan frecuentes en maquetación). Podemos seleccionar el <strong>formato, texto, color y tamaño de los recuadros.</strong></span></p>
+		    <aside style="background: none" class="flex-container4">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.azulweb.net/yourimage/" title="Compartir en Facebook" target="popup" onclick="window.open('', 'popup', 'width=600,height=400')"  rel="nofollow">
+						<div class="flex-item4">
+				            <p id="facebook"><i class="icon-facebook" ></i></p>
+				        </div>
+			        </a>
+			        <a href="http://twitter.com/share?url=http://www.azulweb.net/yourimage/&text=YourImage - imágenes para fines de diseño, vía @AzulWebBlog" title="Compartir en Twitter" target="popup" onclick="window.open('', 'popup', 'width=600,height=400')"  rel="nofollow">
+				    <div class="flex-item5">
+				        <p id="twitter"><i class="icon-twitter" ></i></p>
+				    </div>
+			    </a>
+			        <a href="https://github.com/AngelSanchezAW/YourImage">
+				    <div class="flex-item6">
+				        <p id="codigoc"><i class="icon-github"></i></p>
+			        </div>
+		        </a>
+			</aside>
 	 	<div id="coment"><div id="disqus_thread"></div>
 			<script>
 			(function() {
@@ -217,8 +293,12 @@
 			})();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-		</div>
-	 </div>	
+		</div>	
+	</div>
+	<footer>
+		<p><strong>Azul Web</strong> © 2016.</p>
+		<p><strong>YourImage</strong> by Angel Sanchez.</p>
+	</footer>	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="jquery.h5-lightbox.js"></script>
 </div>

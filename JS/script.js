@@ -15,7 +15,6 @@ function selGen(){
 	tipoGenenerador = document.propiedades.tipoGen.value
 	Generador = tipoGenenerador -12;
 
-
     if (Generador==0) {
     	document.getElementById("animals").style.display = 'block';
     	document.getElementById("city").style.display = 'block';
@@ -88,7 +87,6 @@ function selGen(){
 		document.getElementById("opT3").style.display = 'block';  
 		document.getElementById("opT4").style.display = 'block';
 		document.getElementById("pTex").innerHTML='Placehold.it';    
-
     } 
 
 	var focusGen = Generadores[Generador];
@@ -103,7 +101,6 @@ function selGen(){
 // Funciones para traer imagenes de las API'S -----------------------------------------------
 function generar(){
     tipoGenenerador = document.propiedades.tipoGen.value
-
     var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport"); 
 	tipo = document.propiedades.tipoImg.value
 	alto = document.propiedades.alto.value
@@ -117,7 +114,6 @@ function generar(){
 	var new_vcolorText=vcolorText.substr(1);
 	var new_vbackgroundImage=vbackgroundImage.substr(1);
     
-
     if (tipoGenenerador == 12) {
     	if (color==12) {
     	    var urlimg = "http://lorempixel.com/"+alto+"/"+ancho+"/"+tipoImage+"/";
@@ -168,20 +164,20 @@ function generar(){
 var clic = 1;
 function cerrar(){
 	if(clic==1){
-	   document.getElementById("genImagenes").style.height = 'auto';
+	   document.getElementById("genImagenes").style.maxHeight = '350px';
 	   clic = clic + 1;
 	   } else{
-	       document.getElementById("genImagenes").style.height = '40px';;      
+	       document.getElementById("genImagenes").style.maxHeight = '40px';;      
 	    clic = 1;
 	}   
 }
 var clic2 = 1;
 function cerrar2(){
 	if(clic2==1){
-	   document.getElementById("opciones").style.height = 'auto';
+	   document.getElementById("opciones").style.maxHeight = '510px';
 	   clic2 = clic2 + 1;
 	   } else{
-	       document.getElementById("opciones").style.height = '40px';      
+	       document.getElementById("opciones").style.maxHeight = '40px';      
 	    clic2 = 1;
 	}   
 }
