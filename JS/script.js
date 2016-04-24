@@ -148,11 +148,9 @@ function generar(){
     	    var urlimg = "https://placeholdit.imgix.net/~text?txtsize="+vsizeText+"&bg="+new_vcolorText+"&txtclr="+new_vbackgroundImage+"&txt="+vtext+"&w="+alto+"&h="+ancho+"";
 	    	imgColor = "Imagen a color";
 	    } else {
-	    	var urlimg = "http://placehold.it/"+alto+"/"+ancho+"";
-	    	imgColor = "Imagen a escala de grises";
+	    	var urlimg = "https://placeholdit.imgix.net/~text?txtsize="+vsizeText+"&bg="+new_vcolorText+"&txtclr="+new_vbackgroundImage+"&txt="+vtext+"&w="+alto+"&h="+ancho+"";
+	    	imgColor = "Imagen a color";
 	    }
-    } else {
-    	alert("Vamo a calmarno 16");
     } 
 
     if (alto > 1920 | ancho > 1920) {
@@ -183,7 +181,7 @@ function cerrar2(){
 	   document.getElementById("opciones").style.height = 'auto';
 	   clic2 = clic2 + 1;
 	   } else{
-	       document.getElementById("opciones").style.height = '40px';;      
+	       document.getElementById("opciones").style.height = '40px';      
 	    clic2 = 1;
 	}   
 }

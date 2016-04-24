@@ -12,11 +12,16 @@
 	<title>YourImage</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="JS/script.js"></script>
 	<link rel="stylesheet" href="jquery.h5-lightbox.css">
 	<link rel="shortcut icon" href="IMG/50x50.png" />
 </head>
+<script>
+	window.onload = function() {
+		document.getElementById("headerImages").style.opacity = '0.4';
+    }
+</script>
 <body>
 <div id="contenedor">
 	<header>
@@ -36,6 +41,22 @@
 			</figure>
 	    </div>
 	</aside>
+	<div id="headerImages" class="header__images">
+				<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/people" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/tech/sepia" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/animals/grayscale" class="animated fadeIn">
+				<img src="http://placeimg.com/200/100/tech" class="animated fadeIn">
+			</div>
 	</header>
 	<div id="headerBo"></div>
 	     <form name="propiedades" action="#">
@@ -197,10 +218,9 @@
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 		</div>
-	 </div>
-	 <br>		
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="jquery.h5-lightbox.js"></script>
+	 </div>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="jquery.h5-lightbox.js"></script>
 </div>
 <script id="dsq-count-scr" src="//youimg.disqus.com/count.js" async></script>
 </body>
