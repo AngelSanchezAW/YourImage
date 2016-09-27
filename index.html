@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <meta name="author" content="Angel Sanchez">
 	<meta name="description" content="YourImage es una aplicación que reúne a cuatro generadores automáticos de imágenes (Lorem Pixel, Place IMG, Placekitten y Placehold) con el fin de ofrecer recursos para diseñadores web: fotos aleatorias de muestra."/>
 	<meta property="og:locale" content="es_ES" />
@@ -14,12 +14,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="JS/script.js"></script>
+	<script type="text/javascript" src="tracking.js"></script>
 	<link rel="stylesheet" href="jquery.h5-lightbox.css">
 	<link rel="shortcut icon" href="IMG/50x50.png" />
 </head>
 <script>
 	window.onload = function() {
-		document.getElementById("headerImages").style.opacity = '0.4';
+		document.getElementById("headerImages").style.opacity = '0.4'; 
 		document.getElementById("tituloPost").style.opacity = '9';
 		document.getElementById("headerImages2").style.opacity = '0.4';
     }
@@ -41,7 +42,7 @@
 				</figure>
 		    </div>
 		</aside>
-		<div id="headerImages" class="header__images">
+		<div onclick="menuTracking(1)" id="headerImages" class="header__images">
 			<img src="http://placeimg.com/200/100/animals" class="animated fadeIn">
 			<img src="http://placeimg.com/200/100/arch" class="animated fadeIn">
 			<img src="http://placeimg.com/200/100/nature" class="animated fadeIn">
@@ -68,7 +69,7 @@
             </label>
             <label id="place" class="flex-itemgenimage" for="tip14">
 				<input onclick="selGen()" id="tip14" type="radio" name="tipoGen" value="13">
-				Place IMG
+				Place IMG 
 			</label>
 			<label id="placek" class="flex-itemgenimage" for="tip15">
 				<input onclick="selGen()" id="tip15" type="radio" name="tipoGen" value="14">
@@ -99,45 +100,45 @@
 			    </aside>
 			    <aside class="flex-container">
 			        <label id="city" class="flex-item" for="tip4">
-				    	<input onclick="opSelect()" id="tip4" type="radio" name="tipoImg" value="3">
+				    	<input onclick="opSelect()" id="tip4" type="radio" name="tipoImg" value="3"> 
 				    	<span class="icon-office"></span> Ciudad
 			    	</label>
 			    	<label id="food" class="flex-item" for="tip5">
-				    	<input onclick="opSelect()" id="tip5" type="radio" name="tipoImg" value="4">
+				    	<input onclick="opSelect()" id="tip5" type="radio" name="tipoImg" value="4"> 
 				    	<span class="icon-spoon-knife"></span> Comida
 			    	</label>
 			    	<label id="nightlife" class="flex-item" for="tip6">
-				    	<input onclick="opSelect()" id="tip6" type="radio" name="tipoImg" value="5">
+				    	<input onclick="opSelect()" id="tip6" type="radio" name="tipoImg" value="5"> 
 				    	<span class="icon-glass2"></span> Vida Nocturna
 			    	</label>
 			    </aside>
 			    <aside class="flex-container">
 			        <label id="fashion" class="flex-item" for="tip7">
-			    	    <input onclick="opSelect()" id="tip7" type="radio" name="tipoImg" value="6">
+			    	    <input onclick="opSelect()" id="tip7" type="radio" name="tipoImg" value="6"> 
 			    	    <span class="icon-star-full"></span> Moda
 			    	</label>
 			    	<label id="people" class="flex-item" for="tip8">
-			    	    <input onclick="opSelect()" id="tip8" type="radio" name="tipoImg" value="7">
+			    	    <input onclick="opSelect()" id="tip8" type="radio" name="tipoImg" value="7"> 
 			    	    <span class="icon-man-woman"></span> Personas
 			    	</label>
 			    	<label id="nature" class="flex-item" for="tip9">
-				    	<input onclick="opSelect()" id="tip9" type="radio" name="tipoImg" value="8">
+				    	<input onclick="opSelect()" id="tip9" type="radio" name="tipoImg" value="8"> 
 				    	<span class="icon-leaf"></span> Naturaleza
 			    	</label>
 			    </aside>
 			    <aside class="flex-container">
 			        <label id="sports" class="flex-item" for="tip10">
-				    	<input onclick="opSelect()" id="tip10" type="radio" name="tipoImg" value="9">
+				    	<input onclick="opSelect()" id="tip10" type="radio" name="tipoImg" value="9"> 
 				    	<span class="icon-dribbble"></span> Deportes
 			    	</label>
 			    	<label id="technics" class="flex-item" for="tip11">
-				    	<input onclick="opSelect()" id="tip11" type="radio" name="tipoImg" value="10">
+				    	<input onclick="opSelect()" id="tip11" type="radio" name="tipoImg" value="10"> 
 				    	<span class="icon-cogs"></span> Tecnología
 			    	</label>
 			    	<label id="transport" class="flex-item" for="tip12">
-				    	<input onclick="opSelect()" id="tip12" type="radio" name="tipoImg" value="11">
+				    	<input onclick="opSelect()" id="tip12" type="radio" name="tipoImg" value="11"> 
 				    	<span class="icon-truck"></span> Transporte
-			    	</label>
+			    	</label>	
 			    </aside>
 			    <aside class="flex-container">
 			    	<div id="opT1" class="flex-item3">
@@ -166,9 +167,9 @@
 			    	</div>
 			    </aside>
 			    <aside id="botones" class="flex-container">
-			        <label onclick="generar()"  id="lColor" for="cb">
+			        <label onclick="generar()"  id="lColor" for="cb">			     
 				    	<div title="Imagen a color" id="color" class="flex-item2"><h3>Color image</h3></div>
-				    	<input name="cb" id="cb" type="radio" value="12">
+				    	<input name="cb" id="cb" type="radio" value="12"> 		  
 			    	</label>
 			    	<label onclick="generar()" id="lGris" for="cb2">
 				    	<div title="Imagen a escala de grises" id="gris" class="flex-item2"><h3>Gray image</h3></div>
@@ -203,7 +204,7 @@
 	                </div>
                 </a>
 			</aside>
-	    </aside>
+	    </aside>  
 	 <div style="clear: both"></div>
 	 <div class="header__images2">
 			<img src="http://placekitten.com/200/100" class="animated fadeIn">
@@ -291,18 +292,16 @@
 			})();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-		</div>
+		</div>	
 	</div>
 	<footer>
 		<p><strong>Azul Web</strong> © 2016.</p>
 		<p><strong>YourImage</strong> by Angel Sanchez.</p>
-	</footer>
+	</footer>	
 </div>
-<!--JS Comentarios-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.h5-lightbox.js"></script>
 <script id="dsq-count-scr" src="//youimg.disqus.com/count.js" async></script>
-<!--JS Comentarios-->
-<!--Google Analytics-->
-<!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -311,7 +310,7 @@
 
   ga('create', 'UA-48284612-4', 'auto');
   ga('send', 'pageview');
+
 </script>
-<!--Google Analytics-->
 </body>
 </html>

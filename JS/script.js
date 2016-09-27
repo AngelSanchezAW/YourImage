@@ -1,17 +1,17 @@
 // Funciones para Button Label --------------------------------------------------------------
 function opSelect(){
-    var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport");
+    var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport"); 
 	tipo = document.propiedades.tipoImg.value
 	var focus = tipos[tipo];
 	for (var i = 0; i < 12; i++) {
 		var retro = tipos[i];
 		document.getElementById(retro).style.background='#3498db';
-	}
-	document.getElementById(focus).style.background='#16527a';
+	}	
+	document.getElementById(focus).style.background='#16527a'; 
 }
 
 function selGen(){
-    var Generadores = new Array("lorem","place","placek","plasech");
+    var Generadores = new Array("lorem","place","placek","plasech"); 
 	tipoGenenerador = document.propiedades.tipoGen.value
 	Generador = tipoGenenerador -12;
 
@@ -22,17 +22,17 @@ function selGen(){
     	document.getElementById("nature").style.display = 'block';
     	document.getElementById("technics").style.display = 'block';
     	document.getElementById("abstract").style.display = 'block';
-		document.getElementById("business").style.display = 'block';
+		document.getElementById("business").style.display = 'block'; 
 		document.getElementById("food").style.display = 'block';
 		document.getElementById("nightlife").style.display = 'block';
 		document.getElementById("fashion").style.display = 'block';
 		document.getElementById("sports").style.display = 'block';
 		document.getElementById("transport").style.display = 'block';
-		document.getElementById("opT1").style.display = 'none';
-		document.getElementById("opT2").style.display = 'none';
-		document.getElementById("opT3").style.display = 'none';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
 		document.getElementById("opT4").style.display = 'none';
-		document.getElementById("pTex").innerHTML='Lorem Pixel';
+		document.getElementById("pTex").innerHTML='Lorem Pixel'; 
     } else if (Generador==1) {
         document.getElementById("animals").style.display = 'block';
     	document.getElementById("city").style.display = 'block';
@@ -40,17 +40,17 @@ function selGen(){
     	document.getElementById("nature").style.display = 'block';
     	document.getElementById("technics").style.display = 'block';
     	document.getElementById("abstract").style.display = 'none';
-		document.getElementById("business").style.display = 'none';
-		document.getElementById("food").style.display = 'none';
-		document.getElementById("nightlife").style.display = 'none';
-		document.getElementById("fashion").style.display = 'none';
-		document.getElementById("sports").style.display = 'none';
+		document.getElementById("business").style.display = 'none'; 
+		document.getElementById("food").style.display = 'none'; 
+		document.getElementById("nightlife").style.display = 'none'; 
+		document.getElementById("fashion").style.display = 'none'; 
+		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
-		document.getElementById("opT1").style.display = 'none';
-		document.getElementById("opT2").style.display = 'none';
-		document.getElementById("opT3").style.display = 'none';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
 		document.getElementById("opT4").style.display = 'none';
-		document.getElementById("pTex").innerHTML='Place IMG';
+		document.getElementById("pTex").innerHTML='Place IMG';  
     } else if (Generador==2) {
         document.getElementById("animals").style.display = 'none';
     	document.getElementById("city").style.display = 'none';
@@ -58,17 +58,17 @@ function selGen(){
     	document.getElementById("nature").style.display = 'none';
     	document.getElementById("technics").style.display = 'none';
     	document.getElementById("abstract").style.display = 'none';
-		document.getElementById("business").style.display = 'none';
-		document.getElementById("food").style.display = 'none';
-		document.getElementById("nightlife").style.display = 'none';
-		document.getElementById("fashion").style.display = 'none';
-		document.getElementById("sports").style.display = 'none';
+		document.getElementById("business").style.display = 'none'; 
+		document.getElementById("food").style.display = 'none'; 
+		document.getElementById("nightlife").style.display = 'none'; 
+		document.getElementById("fashion").style.display = 'none'; 
+		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
-		document.getElementById("opT1").style.display = 'none';
-		document.getElementById("opT2").style.display = 'none';
-		document.getElementById("opT3").style.display = 'none';
+		document.getElementById("opT1").style.display = 'none'; 
+		document.getElementById("opT2").style.display = 'none';  
+		document.getElementById("opT3").style.display = 'none';  
 		document.getElementById("opT4").style.display = 'none';
-		document.getElementById("pTex").innerHTML='Placekitten';
+		document.getElementById("pTex").innerHTML='Placekitten';   
     } else if (Generador==3) {
     	document.getElementById("animals").style.display = 'none';
     	document.getElementById("city").style.display = 'none';
@@ -76,32 +76,32 @@ function selGen(){
     	document.getElementById("nature").style.display = 'none';
     	document.getElementById("technics").style.display = 'none';
     	document.getElementById("abstract").style.display = 'none';
-		document.getElementById("business").style.display = 'none';
-		document.getElementById("food").style.display = 'none';
-		document.getElementById("nightlife").style.display = 'none';
-		document.getElementById("fashion").style.display = 'none';
-		document.getElementById("sports").style.display = 'none';
+		document.getElementById("business").style.display = 'none'; 
+		document.getElementById("food").style.display = 'none'; 
+		document.getElementById("nightlife").style.display = 'none'; 
+		document.getElementById("fashion").style.display = 'none'; 
+		document.getElementById("sports").style.display = 'none'; 
 		document.getElementById("transport").style.display = 'none';
-		document.getElementById("opT1").style.display = 'block';
-		document.getElementById("opT2").style.display = 'block';
-		document.getElementById("opT3").style.display = 'block';
+		document.getElementById("opT1").style.display = 'block'; 
+		document.getElementById("opT2").style.display = 'block';  
+		document.getElementById("opT3").style.display = 'block';  
 		document.getElementById("opT4").style.display = 'block';
-		document.getElementById("pTex").innerHTML='Placehold.it';
-    }
+		document.getElementById("pTex").innerHTML='Placehold.it';    
+    } 
 
 	var focusGen = Generadores[Generador];
 	for (var i = 0; i < 4; i++) {
 		var retroGen = Generadores[i];
 		document.getElementById(retroGen).style.background='#de5233';
-	}
-	document.getElementById(focusGen).style.background='#a9351b';
+	}	
+	document.getElementById(focusGen).style.background='#a9351b'; 
 }
 // Funciones para Button Label --------------------------------------------------------------
 
 // Funciones para traer imagenes de las API'S -----------------------------------------------
 function generar(){
     tipoGenenerador = document.propiedades.tipoGen.value
-    var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport");
+    var tipos = new Array("abstract","animals","business","city","food","nightlife","fashion","people","nature","sports","technics","transport"); 
 	tipo = document.propiedades.tipoImg.value
 	alto = document.propiedades.alto.value
 	ancho = document.propiedades.ancho.value
@@ -113,7 +113,7 @@ function generar(){
 	var tipoImage = tipos[tipo];
 	var new_vcolorText=vcolorText.substr(1);
 	var new_vbackgroundImage=vbackgroundImage.substr(1);
-
+    
     if (tipoGenenerador == 12) {
     	if (color==12) {
     	    var urlimg = "http://lorempixel.com/"+alto+"/"+ancho+"/"+tipoImage+"/";
@@ -121,7 +121,7 @@ function generar(){
 	    } else {
 	    	var urlimg = "http://lorempixel.com/g/"+alto+"/"+ancho+"/"+tipoImage+"/";
 	    	imgColor = "Imagen a escala de grises";
-	    }
+	    }	
     } else if (tipoGenenerador == 13) {
     	if (color==12) {
     	    var urlimg = "http://placeimg.com/"+alto+"/"+ancho+"/"+tipoImage+"";
@@ -129,7 +129,7 @@ function generar(){
 	    } else {
 	    	var urlimg = "http://placeimg.com/"+alto+"/"+ancho+"/"+tipoImage+"/grayscale";
 	    	imgColor = "Imagen a escala de grises";
-	    }
+	    }	
     } else if (tipoGenenerador == 14) {
     	if (color==12) {
     	    var urlimg = "http://placekitten.com/"+alto+"/"+ancho+"";
@@ -139,7 +139,7 @@ function generar(){
 	    	imgColor = "Imagen a escala de grises";
 	    }
     } else if (tipoGenenerador == 15) {
-
+    	
     	if (color==12) {
     	    var urlimg = "https://placeholdit.imgix.net/~text?txtsize="+vsizeText+"&bg="+new_vcolorText+"&txtclr="+new_vbackgroundImage+"&txt="+vtext+"&w="+alto+"&h="+ancho+"";
 	    	imgColor = "Imagen a color";
@@ -147,12 +147,12 @@ function generar(){
 	    	var urlimg = "https://placeholdit.imgix.net/~text?txtsize="+vsizeText+"&bg="+new_vcolorText+"&txtclr="+new_vbackgroundImage+"&txt="+vtext+"&w="+alto+"&h="+ancho+"";
 	    	imgColor = "Imagen a color";
 	    }
-    }
+    } 
 
     if (alto > 1920 | ancho > 1920) {
 	    	document.getElementById("titulo").innerHTML='Error: tamaño maximo 1920 x 1920';
 	    } else {
-	    	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Imagen" src="'+urlimg+'">';
+	    	document.getElementById("imgContenedor").innerHTML='<img onclick="textoIMG()" title="Ver imagen" src="'+urlimg+'" data-large-src="'+urlimg+'">';
 		    $("img").h5lightbox();
 		    document.getElementById("titulo").innerHTML='Tamaño de imagen: '+alto+' x '+ancho+' | '+imgColor+'';
 		    document.getElementById("url").innerHTML=urlimg;
@@ -167,9 +167,9 @@ function cerrar(){
 	   document.getElementById("genImagenes").style.maxHeight = '350px';
 	   clic = clic + 1;
 	   } else{
-	       document.getElementById("genImagenes").style.maxHeight = '40px';;
+	       document.getElementById("genImagenes").style.maxHeight = '40px';;      
 	    clic = 1;
-	}
+	}   
 }
 var clic2 = 1;
 function cerrar2(){
@@ -177,8 +177,8 @@ function cerrar2(){
 	   document.getElementById("opciones").style.maxHeight = '510px';
 	   clic2 = clic2 + 1;
 	   } else{
-	       document.getElementById("opciones").style.maxHeight = '40px';
+	       document.getElementById("opciones").style.maxHeight = '40px';      
 	    clic2 = 1;
-	}
+	}   
 }
 // Funciones para Ocultar Menú --------------------------------------------------------------
